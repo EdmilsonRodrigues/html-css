@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        * { /* Configurações Globais CSS */
-            height: 100%;
-        }
         body{
-            background-image: linear-gradient(45deg, #F20587, #F205E2, #960CF2 40%, #F2B705, #F27405);
-            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in, px, pt, pc
+            recomendada: px
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            recomendada: em
+            
+            1em = 16px = tamanho natural
+            */
+            font-size: 1em
+            /*lighter normal bold bolder*/
+            /*  100  - 400 - 600 - 800 */
+            text-decoration: underline;
+        }
+
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 2em;
+            font-style: italic;
+            /* shorthand font
+            font-style -> font-weight -> font-size -> font-family
+            */
+        }
+
+        h2{
+            font: 900 1.8em 'Times New Romam', Times, serif;
         }
     </style>
-    <title>Gradiente em CSS</title>
+    <title>Fontes em CSS</title>
 </head>
 <body>
-    <h1>Testando Gradiente</h1>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non impedit quasi facilis commodi? Provident, suscipit maiores nemo illum eveniet architecto aliquam ducimus iure eaque quibusdam eos a deserunt vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque quasi omnis amet temporibus corporis maiores. Officia voluptates ut necessitatibus, laudantium fuga porro Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, maxime suscipit! Magnam, necessitatibus. Beatae vel ipsum tenetur repellat doloribus quod cupiditate tempora consectetur ut, minus at maxime quae officia suscipit? aliquid explicabo veniam quis doloremque suscipit commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus, rerum necessitatibus excepturi, perferendis possimus molestiae exercitationem accusamus ad ducimus sunt magnam quis vel natus obcaecati laudantium impedit repellat asperiores.</p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam a minus mollitia, repudiandae debitis deleniti voluptate. Voluptas quod totam sed magnam reiciendis. Distinctio labore molestiae placeat facere voluptates sapiente. Laboriosam.</p>
 </body>
 </html>
