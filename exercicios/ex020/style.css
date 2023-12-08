@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+Em HTML é id = Em CSS é # "forquilha" ou "tralha"
+Em HTML é class = Em CSS é .
+
+*/
+
+body{
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: green;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2{
+    color: green;
+}
+
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color: rgb(255, 145, 0);
+}
+
+.avancado{
+    color: blue;
+}
+
+.destaque{
+    background-color: yellow;
+    font-style: italic;
+}
