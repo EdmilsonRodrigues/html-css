@@ -8,3 +8,34 @@
     --cor05: #E0590B;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor04);
+}
+
+header {
+    background-color: var(--cor01);
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor01);
+    text-align: center;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--cor02);
+}
+
+main {
+    background-color: white;
+}
