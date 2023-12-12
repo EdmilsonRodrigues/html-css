@@ -5,4 +5,4 @@ Estou aprendendo a criar sites e agora vou gerenciar repositórios.
 Vou começar a hospedar meus sites no GitHub pages. 
 
 Seguem projetos de estudo:
-<a href="edmilsonrodrigues.github.io/html-css/desafios/d010/">Site Android</a>
+<a href="https://edmilsonrodrigues.github.io/html-css//html-css/desafios/d010/">Site Android</a>
