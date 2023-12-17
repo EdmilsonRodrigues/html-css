@@ -8,3 +8,4 @@ Seguem projetos de estudo:
 
 <a href="https://edmilsonrodrigues.github.io/html-css/desafios/d010/">Site Android</a>
 
+<a href="https://edmilsonrodrigues.github.io/html-css/desafios/d012/">Site Cordel</a>
