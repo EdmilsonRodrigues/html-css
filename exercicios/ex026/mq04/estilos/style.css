@@ -36,24 +36,11 @@ h1 {
 }
 
 img {
-    display: block;
+    display: none;
     margin: auto;
 }
 
-img#tablet{
-    display: none;
+img#phone {
+    display: block;
 }
-
-img#print{
-    display: none;
-}
-
-img#pc{
-    display: none;
-}
-
-img#tv{
-    display: none; 
-}
-
 

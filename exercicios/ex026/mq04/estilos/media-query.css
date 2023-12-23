@@ -2,4 +2,99 @@
 
 /*Todas as Mídias*/
 
-/**/
+/*Typical device break points W3C*/
+/*
+pequenas telas: < 600px
+celuulares: 600px - 767px
+tablets: 768px - 991px
+laptops/desktops: 992px - 1199px
+telas grandes: > 1200px
+*/
+
+/*Typical Device Breakpoints Community*/
+/*
+largura x altura
+1920×1080 - Mais utilizado
+360×800 - Segundo mais
+1366×768 - Terceiro mais
+1536×864 - Quarto mais
+390×844 - Quinto mais
+414×896
+412×915
+393×873 - Sexto mais
+1280×720
+360×780
+360×640
+1440×900
+375×812
+1600×900
+2560×1440
+810×1080
+*/
+
+/*Impressão*/
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: none;
+        background-color: white;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+    
+    main::after {
+        content: 'Esse arquivo foi impresso no site do cursoemvideo.com';
+        font-size: 0.5em;
+    }
+}
+
+/*Remover Telefone*/
+@media screen and (min-width: 768px) {
+    img#phone {
+        display: none;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+
+    img#tablet {
+        display: block;
+    }
+}
+
+/*PC*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+    }
+
+    img#pc {
+        display: block;
+    }
+    
+}
+
+/*Grandes Telas*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-tv.jpg");
+    }
+
+    img#tv {
+        display: block;
+    }
+}
