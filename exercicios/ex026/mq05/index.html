@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="esilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -27,5 +32,22 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus et adipisci. Debitis quos id voluptas! Nostrum non nobis, animi quasi rerum voluptate atque ut cupiditate accusamus culpa, distinctio eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, tempore? Error id natus temporibus quos. Aliquid nobis illum asperiores sit harum architecto culpa accusantium officia consectetur. Delectus iure quas hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium perferendis ea velit illum aperiam aliquid quasi. Laboriosam quis hic placeat corporis consequuntur? Nulla rem sapiente ea enim sit similique eos!</p>
         </article>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'none') {
+                itens.style.display = "block"
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
