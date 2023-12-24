@@ -19,29 +19,38 @@
 </head>
 <body>
     <main>
-        <section>
-            <h1>Login</h1>
-            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-            <form action="#" method="get">
-                <p>
-                    <label for="iemail">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                    </label>
-                    <input type="email" name="email" id="iemail" placeholder="Seu email" required autocomplete="email">
-                </p>
-                <p>
-                    <label for="ipass">
-                        <span class="material-symbols-outlined">
-                            key
-                        </span>
-                    </label>
-                    <input type="password" name="pass" id="ipass" placeholder="Sua senha" minlength="8" maxlength="15" required autocomplete="current-password">
-                </p>
-                <input id="enviar" type="submit" value="Entrar">
-                <input type="button" value="Esqueci a senha">
-            </form>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="for">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="#" method="get">
+                    <p>
+                        <label for="iemail">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu email" required autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="ipass">
+                            <span class="material-symbols-outlined">
+                                key
+                            </span>
+                        </label>
+                        <input type="password" name="pass" id="ipass" placeholder="Sua senha" minlength="8" maxlength="20" required autocomplete="current-password">
+                    </p>
+                    <input id="enviar" type="submit" value="Entrar">
+                    <button><a href="#">
+                        Esqueci a senha <span id="mail" class='material-symbols-outlined'>
+                            mail
+                            </span>
+                    </a></button>
+                </form>
+            </div>
         </section>
     </main>
 </body>
