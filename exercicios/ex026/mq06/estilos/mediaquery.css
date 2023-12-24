@@ -36,6 +36,7 @@ grandes telas: 1200px;
 @media screen and (min-width: 768px) and (max-width: 991px) {
     section#login {
         width: 90vw;
+        height: 400px;
     }
 
     div#imagem {
@@ -54,14 +55,13 @@ grandes telas: 1200px;
         font-size: 1.2em;
     }
     
-    form input {
-        width: 89%;
-    }
+
 }
 
 @media screen and (min-width: 992px) {
     section#login {
         width: 950px;
+        height: 500px;
     }
 
     div#imagem {
@@ -80,7 +80,4 @@ grandes telas: 1200px;
         font-size: 1.2em;
     }
     
-    form input {
-        width: 89%;
-    }
 }
