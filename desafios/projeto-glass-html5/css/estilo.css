@@ -1,3 +1,5 @@
+/* Regras Gerais */
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,400;0,700;0,800;1,400&family=Rubik+Doodle+Shadow&display=swap');
@@ -7,7 +9,7 @@
     --cor02: #5768a5;
     --cor03: #46559659;
     --cor04: #afadce4b;
-    --cor05: #ECFFB0;
+    --cor05: #878b4e;
     --fonte-principal: 'Noto Sans Display';
     --fonte-título: 'Rubik Doodle Shadow';
 }
@@ -16,6 +18,8 @@
     width: 0px;
     height: 0px;
 }
+
+/*Formatações Gerais*/
 
 * {
     margin: 0px;
@@ -26,10 +30,11 @@ html, body{
     background-color: var(--cor03);
     font-family: var(--fonte-principal);
     width: 100vw;
-    height: 100vh;
 }
 
-header {
+/* Cabeçalho */
+
+header#cabecalho {
     background-color: var(--cor02);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
     text-align: center;
@@ -37,25 +42,26 @@ header {
     padding-bottom: 0px;
 }
 
-header h1 {
+header#cabecalho h1 {
     font: normal bolder 3em var(--fonte-título);
     padding: 10px;
     color: var(--cor01);
 }
 
-header h2 {
+header#cabecalho h2 {
     font: normal 500 2em var(--fonte-título);
     padding: 10px;
     max-width: 400px;
     margin: auto;
 }
 
-header img {
+header#cabecalho img {
     left: 2%;
     position: absolute;
     transform: translate(0%, -60%);
 }
 
+/* Menu */
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -73,7 +79,6 @@ header img {
 #menu {
     background-color: var(--cor02);
     text-align: center;
-    display: none;
 }
 
 #menu h1 {
@@ -84,17 +89,13 @@ header img {
     list-style: none;
 }
 
-/*#menu li {
-
-}*/
-
 #menu li:hover {
     background-color: var(--cor01);
     color: var(--cor05);
     transition: 0.5s;
 }
 
-nav a {
+#menu a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -102,11 +103,37 @@ nav a {
     height: 100%;
 }
 
-section {
+/* Main */
+
+main {
     background-color: var(--cor0);
     width: 90vw;
     margin: auto;
     padding: 10px;
+}
+
+header#cabecalhoartigo nav ul {
+    list-style-type: none;
+}
+
+header#cabecalhoartigo nav li {
+    display: inline-block;
+    padding: 0px 10px;
+    color: var(--cor01);
+    font-size: 1em;
+    border-right: 1px solid var(--cor01);
+}
+
+header#cabecalhoartigo nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header#cabecalhoartigo hgroup h2, main hgroup h3 {
+    font-size: 1em;
+    color: var(--cor01);
+    text-align: right;
+    padding: 0px;
 }
 
 main h1 {
@@ -128,29 +155,34 @@ main p {
     line-height: 1.5em;
     text-align: justify;
     text-indent: 20px;
+    padding: 10px 0px;
 }
 
 figure {
     position: relative;
+    display: block;
+    text-align: center;
+    width: 400px;
+    height: 225px;
+    margin: 0px auto 10px auto;
 }
 
-section img {
-    width: 85vw;
-    margin: auto;
+main img {
     padding: 15px;
     border-radius: 20px;
 }
 
 figure figcaption {
-    position: absolute;
     opacity: 0;
-    left: 2.5%;
-    top: 5%;
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 05%;
     padding-left: 10px;
     color: white;
     border-radius: 10px;
-    width: 92.5%;
-    height: 86%;
+    width: 388px;
+    height: 225px;
     border: 3px solid black;
     background-color: #1d1e2c77;
 }
@@ -159,6 +191,57 @@ figure figcaption:hover {
     opacity: 1;
     transition: 0.5s;
 }
+
+main table {
+    border-collapse: collapse;
+}
+
+main table caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+main table caption > span {
+    font-size: 10px;
+    float: right;
+    margin-top: 8px;
+}
+
+main table td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+main table th {
+    background-color: var(--cor01);
+    color: var(--cor05);
+    vertical-align: top;
+    text-align: right;
+}
+
+main table td {
+    background-color: #edffb086;
+}
+
+/* Aside */
+
+aside {
+    background-color: var(--cor02);
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+aside h1 {
+    text-align: center;
+    background-color: var(--cor05);
+}
+
+aside h2, p {
+    
+}
+
+/* Footer */
 
 footer {
     background-color: var(--cor01);
