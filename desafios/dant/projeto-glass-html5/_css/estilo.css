@@ -4,9 +4,9 @@
 
 :root {
     --cor01: #1D1E2C;
-    --cor02: #7D8CC4;
-    --cor03: #465596;
-    --cor04: #afadce;
+    --cor02: #5768a5;
+    --cor03: #46559659;
+    --cor04: #afadce4b;
     --cor05: #ECFFB0;
     --fonte-principal: 'Noto Sans Display';
     --fonte-título: 'Rubik Doodle Shadow';
@@ -98,7 +98,7 @@ nav a {
 }
 
 section {
-    background-color: var(--cor04);
+    background-color: var(--cor0);
     width: 90vw;
     margin: auto;
     padding: 10px;
@@ -123,6 +123,36 @@ main p {
     line-height: 1.5em;
     text-align: justify;
     text-indent: 20px;
+}
+
+figure {
+    position: relative;
+}
+
+section img {
+    width: 85vw;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+figure figcaption {
+    position: absolute;
+    opacity: 0;
+    left: 2.5%;
+    top: 5%;
+    padding-left: 10px;
+    color: white;
+    border-radius: 10px;
+    width: 92.5%;
+    height: 86%;
+    border: 3px solid black;
+    background-color: #1d1e2c77;
+}
+
+figure figcaption:hover {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 footer {
