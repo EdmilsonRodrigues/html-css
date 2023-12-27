@@ -14,11 +14,6 @@
     --fonte-título: 'Rubik Doodle Shadow';
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-
 /*Formatações Gerais*/
 
 * {
@@ -29,7 +24,6 @@
 html, body{
     background-color: var(--cor03);
     font-family: var(--fonte-principal);
-    width: 100vw;
 }
 
 /* Cabeçalho */
@@ -58,6 +52,7 @@ header#cabecalho h2 {
 header#cabecalho img {
     left: 2%;
     position: absolute;
+    width: 20vw;
     transform: translate(0%, -60%);
 }
 
@@ -234,11 +229,16 @@ aside {
 
 aside h1 {
     text-align: center;
-    background-color: var(--cor05);
+    background-color: var(--cor01);
+    color: var(--cor05);
 }
 
-aside h2, p {
-    
+aside h2 {
+    text-align: center;
+}
+
+aside p {
+    margin: 0px 10px;
 }
 
 /* Footer */
