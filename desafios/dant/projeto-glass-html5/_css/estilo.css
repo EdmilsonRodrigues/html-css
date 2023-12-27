@@ -5,8 +5,8 @@
 :root {
     --cor01: #1D1E2C;
     --cor02: #7D8CC4;
-    --cor03: #8F7E4F;
-    --cor04: #918B76;
+    --cor03: #465596;
+    --cor04: #afadce;
     --cor05: #ECFFB0;
     --fonte-principal: 'Noto Sans Display';
     --fonte-título: 'Rubik Doodle Shadow';
@@ -17,16 +17,19 @@
     padding: 0px;
 }
 
-body {
-    background-color: var(--cor05);
+html, body{
+    background-color: var(--cor03);
     font-family: var(--fonte-principal);
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
     background-color: var(--cor02);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
-    padding: 10px;
     text-align: center;
+    position: relative;
+    padding-bottom: 0px;
 }
 
 header h1 {
@@ -43,14 +46,11 @@ header h2 {
 }
 
 header img {
-    float: left;
-    transform: translate(0%, -50%);
+    left: 2%;
+    position: absolute;
+    transform: translate(0%, -60%);
 }
 
-nav#menu {
-    background-color: var(--cor02);
-    text-align: center;
-}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -61,42 +61,46 @@ nav#menu {
 }
 
 #img-m {
-    
-}
-
-nav#menu h1 {
-    display: none;
-}
-
-nav#menu ul {
-    display: none;
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-}
-
-nav#menu li {
-    display: inline-block;
-    padding: 10px;
+    width: 100%;
     cursor: pointer;
-    background-color: var(--cor04);
 }
 
-nav#menu li:hover {
-    background-color: var(--cor03);
+#menu {
+    background-color: var(--cor02);
+    text-align: center;
+    display: none;
+}
+
+#menu h1 {
+    display: none;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+/*#menu li {
+
+}*/
+
+#menu li:hover {
+    background-color: var(--cor01);
+    color: var(--cor05);
     transition: 0.5s;
 }
 
 nav a {
     text-decoration: none;
-    border-radius: 10px;
-    color: white;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
-main {
-    background-color: white;
+section {
+    background-color: var(--cor04);
+    width: 90vw;
+    margin: auto;
     padding: 10px;
 }
 
@@ -121,4 +125,9 @@ main p {
     text-indent: 20px;
 }
 
-
+footer {
+    background-color: var(--cor01);
+    color: var(--cor05);
+    padding: 1px;
+    text-align: center;
+}
