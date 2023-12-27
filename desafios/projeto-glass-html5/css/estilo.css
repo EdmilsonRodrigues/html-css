@@ -45,7 +45,7 @@ header#cabecalho h1 {
 header#cabecalho h2 {
     font: normal 500 2em var(--fonte-título);
     padding: 10px;
-    max-width: 400px;
+    max-width: 400px;/
     margin: auto;
 }
 
@@ -157,14 +157,15 @@ figure {
     position: relative;
     display: block;
     text-align: center;
-    width: 400px;
-    height: 225px;
+    width: 80vw;
+    height: 45vw;
     margin: 0px auto 10px auto;
 }
 
-main img {
+main figure img {
     padding: 15px;
     border-radius: 20px;
+    width: 80vw;
 }
 
 figure figcaption {
@@ -176,8 +177,8 @@ figure figcaption {
     padding-left: 10px;
     color: white;
     border-radius: 10px;
-    width: 388px;
-    height: 225px;
+    width: 78vw;
+    height: 45vw;
     border: 3px solid black;
     background-color: #1d1e2c77;
 }
@@ -186,6 +187,8 @@ figure figcaption:hover {
     opacity: 1;
     transition: 0.5s;
 }
+
+/* Tabela */
 
 main table {
     border-collapse: collapse;
