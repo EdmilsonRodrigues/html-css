@@ -4,38 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Google Glass</title>
+
 </head>
 <body>
     <header>
-        <h1>Google Glass</h1>
-        <h2>A revolução do Google está chegando</h2>
+
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
         
-        <picture>
-            <source media="(max-width: 800px)" srcset="_imagens/glass-logo-med.png" type="image/png">
-            <img src="_imagens/glass-logo-grd.png" alt="Logo Google Glass">
-        </picture>
+        <img src="_imagens/glass-oculos-preto-pp.png" alt="Logo Google Glass">
+        
+        <nav id="menu">
+            <h1>Menu Principal</h1> 
+            <span id="img-m" class="material-symbols-outlined">
+                menu
+            </span>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="specs.html" target="_self" rel="next">Especificações</a></li>
+                <li><a href="fotos.html" target="_self" rel="next">Fotos</a></li>
+                <li><a href="multimidia.html" target="_self" rel="next">Multimídia</a></li>
+                <li><a href="fale-conosco.html" target="_self" rel="next">Fale conosco</a></li>
+            </ul> 
+        </nav>
     </header>    
-        
-    <nav>
-        <h1>Menu Principal</h1> 
-        - <a href="index.html" target="_self">Home</a>
-        - <a href="specs.html" target="_self" rel="next">Especificações</a>
-        - <a href="fotos.html" target="_self" rel="next">Fotos</a>
-        - <a href="multimidia.html" target="_self" rel="next">Multimídia</a>
-        - <a href="fale-conosco.html" target="_self" rel="next">Fale conosco</a>    
-    </nav>
     
 
     <main>
         <section>
-            Tecnologia > Inovações
-            Saiba tudo sobre o Google Glass
-            por Gustavo Guanabara
-            Atualizado em 23/Abril/2013
-            
+            <hgroup>
+                <h3>Tecnologia > Inovações</h3>
+                <h1>Saiba tudo sobre o Google Glass</h1>
+                <h2>por Gustavo Guanabara</h2>
+                <h3>Atualizado em 23/Abril/2013</h3>
+            </hgroup>
+
             <article>
-                <h1>O que é</h1>
+                <h2>O que é</h2>
                 <p>O Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de Project Glass, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
                 
                 [AQUI ENTRA UMA FOTO]
@@ -60,12 +70,12 @@
                 [AQUI ENTRA UM VÍDEO]
                 
                 <aside>
-                    <h2>Outras Notícias</h2>
-                    <h3>Vídeo mais recente</h3>
+                    <h1>Outras Notícias</h1>
+                    <h2>Vídeo mais recente</h2>
                     
                     [AQUI ENTRA UM VÍDEO]
                     
-                    <h3>Novidades no Glass</h3>
+                    <h2>Novidades no Glass</h2>
                     <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
                     
                     <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
@@ -75,8 +85,9 @@
     </main>
 
     <footer>
-        Copyright 2013 - by Gustavo Guanabara
-        Facebook | Twitter
+        <p>
+            Copyright 2013 - by Gustavo Guanabara Facebook | Twitter
+        </p>
     </footer>
 
 </body>

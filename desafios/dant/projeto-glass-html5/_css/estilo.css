@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,400;0,700;0,800;1,400&family=Rubik+Doodle+Shadow&display=swap');
+
 :root {
-    --cor01: #0045DB;
-    --cor02: #00D0DB;
-    --cor03: #293B61;
-    --cor04: #614A2B;
-    --cor05: #DB7E00;
+    --cor01: #1D1E2C;
+    --cor02: #7D8CC4;
+    --cor03: #8F7E4F;
+    --cor04: #918B76;
+    --cor05: #ECFFB0;
+    --fonte-principal: 'Noto Sans Display';
+    --fonte-título: 'Rubik Doodle Shadow';
 }
 
 * {
@@ -14,46 +18,107 @@
 }
 
 body {
-    background-color: var(--cor02);
+    background-color: var(--cor05);
+    font-family: var(--fonte-principal);
 }
-
 
 header {
-    background-color: var(--cor01);
-    text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.226);
-}
-
-header > h1 {
-    font: normal 600 8em Times;
-    margin: 20px;
-    color: white;
-}
-
-header > h2 {
-    font: normal 400 3em Times;
-    margin: 10px;
-    color: white;
-}
-
-nav {
-    background-color: var(--cor01);
+    background-color: var(--cor02);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
+    padding: 10px;
     text-align: center;
 }
 
-nav > h1 {
+header h1 {
+    font: normal bolder 3em var(--fonte-título);
     padding: 10px;
+    color: var(--cor01);
 }
 
-nav > a {
-    text-decoration: none;
+header h2 {
+    font: normal 500 2em var(--fonte-título);
     padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+header img {
+    float: left;
+    transform: translate(0%, -50%);
+}
+
+nav#menu {
+    background-color: var(--cor02);
+    text-align: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+#img-m {
+    
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu ul {
+    display: none;
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
     background-color: var(--cor04);
+}
+
+nav#menu li:hover {
+    background-color: var(--cor03);
+    transition: 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 10px;
     color: white;
 }
 
 main {
     background-color: white;
+    padding: 10px;
 }
+
+main h1 {
+    font-size: 2em;
+    padding: 10px 0px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    padding: 8px 0px;
+}
+
+main h3 {
+    font-size: 1.3em;
+    padding: 5px 0px;
+}
+
+main p {
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
