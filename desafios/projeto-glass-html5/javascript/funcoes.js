@@ -18,30 +18,33 @@ function padraoMenu() {
 }
 
 function mudaFoto(tipo) {
-    if (window.innerWidth >= 768) {
-        if (tipo == 0) {
-            var arquivo = "imagens/glass-oculos-preto-peq.png"
-        }
-        else {
-            if (tipo == 1) {
-                var arquivo = "imagens/home.png"
+    if (tipo == 0) {
+        var arquivo = "imagens/glass-oculos-preto-peq.png"
+    }
+    else {
+        if (tipo == 1) {
+            var arquivo = "imagens/home.png"
+        } else {
+            if (tipo == 2) {
+                var arquivo = "imagens/especificacoes.png"
             } else {
-                if (tipo == 2) {
-                    var arquivo = "imagens/especificacoes.png"
+                if (tipo == 3) {
+                    var arquivo = "imagens/fotos.png"
                 } else {
-                    if (tipo == 3) {
-                        var arquivo = "imagens/fotos.png"
+                    if (tipo == 4) {
+                        var arquivo = "imagens/multimidia.png"
                     } else {
-                        if (tipo == 4) {
-                            var arquivo = "imagens/multimidia.png"
-                        } else {
-                            var arquivo = "imagens/icone-contato.png"
-                        }
+                        var arquivo = "imagens/icone-contato.png"
                     }
-
                 }
-            }   
-        }
+
+            }
+        }   
+    }
+    if (window.innerWidth >= 768) {
         icon.src = arquivo
+    } else {
+        let icon = window.document.querySelector('source#iconep')
+        icon.srcset = arquivo        
     }
 }

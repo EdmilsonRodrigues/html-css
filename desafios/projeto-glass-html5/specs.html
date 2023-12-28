@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/specs.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Google Glass</title>
@@ -18,7 +19,7 @@
             </hgroup>
 
             <picture>
-                <source media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
+                <source id="iconep" media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
                 <img id="icone" src="imagens/glass-oculos-preto-peq.png" alt="Logo Google Glass">
             </picture>
 
@@ -37,24 +38,52 @@
             </nav>
         </header>
         
-    
-    <section>
-        Glass > Especificações
-        Raio-X no Google Glass
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
+        <main>
+            <section>
+                <header id="cabecalhoartigo">
+                    <nav id="caminho">
+                        <ul>
+                            <li><a href="#">Glass</a></li>
+                            <li><a href="#">Especificações</a></li>
+                        </ul>
+                    </nav>
+                    <hgroup>
+                        <h1>Raio-X no Google Glass</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3>Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+                
+                <article>
+                    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                    
+                    <section id="conteudo">
+                        <img id="spec" src="imagens/glass-esquema-marcado-p.png" alt="Esquema Google Glass com marcações interativas" usemap="#mapap">
+                        <map name="mapap">
+                            <area shape="poly" coords="128, 151, 186, 138, 188, 170, 129, 178" href="google-glass.html#tela" alt="Tela do Google Glass" target="janela">
+                            <area shape="circle" coords="110, 171, 8" href="google-glass.html#camera" target="janela" alt="Camera do Google Glass">
+                            <area shape="circle" coords="53, 36, 8" href="google-glass.html#gadgets" alt="Gadgets do Google Glass" target="janela">
+                            <area shape="poly" coords="19, 101, 57, 151, 58, 175 19, 118," href="google-glass.html#sensores" target="janela" alt="Sensores do Google Glass">
+                        </map>
+                        <map name="mapag">
+                            <area shape="poly" coords="184, 218, 264, 208, 266, 243, 185, 254" href="google-glass.html#tela" alt="Tela do Google Glass" target="janela">
+                            <area shape="circle" coords="157, 243, 12" href="google-glass.html#camera" alt="Camera do Google Glass">
+                            <area shape="circle" coords="76, 51, 12" href="google-glass.html#gadgets" alt="Gadgets do Google Glass" target="janela">
+                            <area shape="poly" coords="27, 144, 81, 216, 83, 251, 27, 170" href="google-glass.html#sensores" target="janela" alt="Sensores do Google Glass">
+                        </map>
+                        <iframe src="google-glass.html" name="janela" id="frame-spec" frameborder="0">
+                            Infelizmente seu navegador não é compatível com esse recurso.
+                        </iframe>
+                    </section>
+                </article>
+            </section>
         
-        <article>
-            Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-            
-            [AQUI ENTRA UMA IMAGEM]
-        </article>
-    </section>
-    
-    <footer>
-        Copyright 2013 - by Gustavo Guanabara<
-        Facebook | Twitter
-    </footer>    
+        </main>    
+        <footer>
+            Copyright 2013 - by Gustavo Guanabara<
+            Facebook | Twitter
+        </footer>
+    </div>    
     <script src="javascript/funcoes.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ grandes telas: > 1200px
 }
 
 @media screen and (min-width: 768px){
-    span#img-m {
+span#img-m {
         display: none;
     }
 
@@ -29,13 +29,31 @@ grandes telas: > 1200px
         margin-bottom: 5px;
     }
 
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
     #icone {
-        top: ;
+        top: 160px;
+    }
+
+    figure figcaption {
+        left: 2%;
+        width: 78.3vw;
+        top: 4%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
+    #icone {
+        top: 140px;
+    }
+
+    figure figcaption {
+        left: 2%;
+        top: 3%;
+        width: 78.5vw;
+        
+    }
 }
 
 @media screen and (min-width: 992px) {

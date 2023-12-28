@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+img#spec {
+    margin: auto;
+    display: block;
+}
+
+iframe#frame-spec {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 320px;
+    overflow: hidden;
+    scrollbar-width: 0px;
+    padding: 10px 0px;
+}

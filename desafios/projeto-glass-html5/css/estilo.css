@@ -168,7 +168,7 @@ figure {
     margin: 0px auto 10px auto;
 }
 
-main figure img {
+main img#iglass {
     padding: 15px;
     border-radius: 20px;
     width: 80vw;
@@ -198,6 +198,7 @@ figure figcaption:hover {
 
 main table {
     border-collapse: collapse;
+    margin: auto;
 }
 
 main table caption {
