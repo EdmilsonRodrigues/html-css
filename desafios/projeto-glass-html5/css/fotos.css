@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+#lis-img {
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    width: 90vw;
+    overflow: hidden;
+}
+
+ul#lis-img > li {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+}
+
+ul#lis-img > li > span {
+    opacity: 0;
+}
+
+ul#lis-img > li:hover {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+
+
+#foto-01 {
+    background: white url(../imagens/galeria-01.jpg) center center no-repeat;
+    background-size: 220px 220px;
+}
+
+#foto-02 {
+    background: white url(../imagens/galeria-02.jpg) center center no-repeat;
+    background-size: 220px 220px;
+}
+
+#foto-03 {
+    background: white url(../imagens/galeria-03.jpg) center center no-repeat;
+    background-size: 220px 220px;
+}
+
+#foto-04 {
+    background: white url(../imagens/galeria-04.jpg) center center no-repeat;
+    background-size: 220px 220px;
+}
+
+#foto-05 {
+    background: white url(../imagens/galeria-05.jpg) center center no-repeat;
+    background-size: 220px 220px;
+}
+
+#foto-06 {
+    background: white url(../imagens/galeria-06.jpg) center center;
+    background-size: 200px 200px;
+}
+

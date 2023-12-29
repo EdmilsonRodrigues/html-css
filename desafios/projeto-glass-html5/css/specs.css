@@ -9,8 +9,26 @@ iframe#frame-spec {
     display: block;
     margin: auto;
     width: 350px;
-    height: 320px;
+    height: 500px;
+    position: relative;
     overflow: hidden;
-    scrollbar-width: 0px;
     padding: 10px 0px;
+}
+
+img#mao {
+    display: block;
+    margin: auto;
+}
+
+.spec {
+    background-color: #ffffff00;
+}
+
+.frame {
+    margin-top: 200px;
+}
+
+.img-d {
+    display: block;
+    margin: auto;
 }

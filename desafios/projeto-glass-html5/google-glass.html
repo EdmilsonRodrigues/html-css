@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="spec" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/specs.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Google Glass</title>
 
 </head>
-<body onresize="padraoMenu()" onload="padraoMenu()">
+<body class="spec" onresize="padraoMenu()" onload="padraoMenu()">
     <div id="interface">
         <main>
             <section>
+                <img id="mao" src="imagens/mao-cima.png" alt="Mão apontando para cima">
                 <h1>Clique sobre as áreas destacadas em vermelho</h1>
-                [AQUI ENTRA UMA FOTO]
 
-                <article id="tela">
+                <article class="frame" id="tela">
                     <h2>Tela</h2>
                     <h3>Como o mundo vai aparecer</h3>
                     <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</p>
-                    [AQUI ENTRA UMA FOTO]
+                    
+                    <img src="imagens/det-tela.jpg" alt="Tela Google Glass">
                 </article>
 
-                <article id="camera">
+                <article class="frame" id="camera">
                     <h2>Câmera</h2>
                     <h3>Filme e fotografe a qualquer momento</h3>
-                    [AQUI ENTRA UMA FOTO]
+                    <img class="img-d" src="imagens/det-camera.png" alt="Câmera Google Glass">
                     <p>Com o Google Glass será possível tirar fotos com até 5 megapixels e gravar vídeos com 720 linhas de resolução. Os primeiros vídeos e fotos capturados com o aparelho já começaram a circular pela rede, mas até agora ninguém tem muitas informações técnicas.</p>
                 </article>
 
-                <article id="sensores">
+                <article class="frame" id="sensores">
                     <h2>Sensores</h2>
                     <h3>A sensibilidade de um simples óculos</h3>
                     <p>Quem pensa que para comandar o Google Glass vai precisar de teclado e mouse, se engana redondamente. O dispositivo vem com vários tipos de sensores e microfones embutidos. Assim, para dar um comando, basta falar ou passar o dedo na lateral do óculos.</p>
-                    [AQUI ENTRA UMA FOTO]
+                    <img src="imagens/det-touch.jpg" alt="Sensores Google Glass">
                 </article>
 
-                <article id="gadgets">
+                <article class="frame" id="gadgets">
                     <h2>Bateria e Gadgets</h2>
                     <h3>Quais são os dispositivos que complementam o Glass</h3>
-                    [AQUI ENTRA UMA FOTO]
+                    <img class="img-d" src="imagens/det-bateria.png" alt="Bateria Google Glass">
                     <p>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</p>
                 </article>
             </section>
@@ -49,5 +51,3 @@
     <script src="javascript/funcoes.js"></script>
 </body>
 </html>
-
-

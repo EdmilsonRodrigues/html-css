@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/fotos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Google Glass</title>
 
@@ -18,7 +19,7 @@
             </hgroup>
 
             <picture>
-                <source media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
+                <source id="iconep" media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
                 <img id="icone" src="imagens/glass-oculos-preto-peq.png" alt="Logo Google Glass">
             </picture>
 
@@ -36,32 +37,44 @@
                 </ul>
             </nav>
         </header>
-        
-    
-    <main>
-        <section>
-            Glass > Fotos
-            Galeria de Imagens do Google Glass
-            por Gustavo Guanabara
-            Atualizado em 01/Maio/2013
+        <main>
+            <section>
+                <header id="cabecalhoartigo">
+                    <nav id="caminho">
+                        <ul>
+                            <li><a href="#">Glass</a></li>
+                            <li><a href="#">Fotos</a></li>
+                        </ul>
+                    </nav>
+                    <hgroup>
+                        <h1>Galeria de Imagens do Google Glass</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3>Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
             
-            <article>
-                Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
-                
-                - Agenda e lembretes
-                - Sergey Brin usando o Glass
-                - Leve e compacto
-                - Sensação de uma tela de 50"
-                - Vários tipos de lente
-                - Informações importantes
-            </article>
-        </section>
-    </main>
+                <article>
+                    <p>
+                        Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+                    </p>
+                    
+                    <ul id="lis-img">
+                        <li id="foto-01"><span>Agenda e lembretes</span></li>
+                        <li id="foto-02"><span>Sergey Brin usando o Glass</span></li>
+                        <li id="foto-03"><span>Leve e <br> compacto</span></li>
+                        <li id="foto-04"><span>Sensação de uma tela de 50"</span></li>
+                        <li id="foto-05"><span>Vários tipos de lente</span></li>
+                        <li id="foto-06"><span>Informações importantes</span></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
     
-    <footer>
-        Copyright 2013 - by Gustavo Guanabara
-        Facebook | Twitter
-    </footer>    
+        <footer>
+            Copyright 2013 - by Gustavo Guanabara
+            Facebook | Twitter
+        </footer>    
+    </div>
     <script src="javascript/funcoes.js"></script>
 </body>
 </html>
