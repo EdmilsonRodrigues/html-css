@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Google Glass</title>
 
 </head>
-<body onresize="padraoMenu()" onload="padraoMenu()">
+<body onresize="padraoMenu(), mudaFoto(5)" onload="padraoMenu(), mudaFoto(5)">
     <div id="interface">
         <header id="cabecalho">
             <hgroup>
@@ -18,7 +19,7 @@
             </hgroup>
 
             <picture>
-                <source media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
+                <source id="iconep" media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
                 <img id="icone" src="imagens/glass-oculos-preto-peq.png" alt="Logo Google Glass">
             </picture>
 
@@ -28,57 +29,161 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li><a onmouseover="mudaFoto(1)" onmouseout="mudaFoto(0)" href="index.html" target="_self">Home</a></li>
-                    <li><a onmouseover="mudaFoto(2)" onmouseout="mudaFoto(0)" href="specs.html" target="_self" rel="next">Especificações</a></li>
-                    <li><a onmouseover="mudaFoto(3)" onmouseout="mudaFoto(0)" href="fotos.html" target="_self" rel="next">Fotos</a></li>
-                    <li><a onmouseover="mudaFoto(4)" onmouseout="mudaFoto(0)" href="multimidia.html" target="_self" rel="next">Multimídia</a></li>
-                    <li><a onmouseover="mudaFoto(5)" onmouseout="mudaFoto(0)" href="fale-conosco.html" target="_self" rel="next">Fale conosco</a></li>
+                    <li><a onmouseover="mudaFoto(1)" onmouseout="mudaFoto(5)" href="index.html" target="_self">Home</a></li>
+                    <li><a onmouseover="mudaFoto(2)" onmouseout="mudaFoto(5)" href="specs.html" target="_self" rel="next">Especificações</a></li>
+                    <li><a onmouseover="mudaFoto(3)" onmouseout="mudaFoto(5)" href="fotos.html" target="_self" rel="next">Fotos</a></li>
+                    <li><a onmouseover="mudaFoto(4)" onmouseout="mudaFoto(5)" href="multimidia.html" target="_self" rel="next">Multimídia</a></li>
+                    <li><a href="fale-conosco.html" target="_self" rel="next">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
         
     <main>
         <section>
-        Fale Conosco > Contato
-        Formulário de Contato
-        por Gustavo Guanabara
-        Atualizado em 01/Maio/2013
+            <header id="cabecalhoartigo">
+                <nav id="caminho">
+                    <ul>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <hgroup>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3>Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
         
             <article>
-            Identificação do Usuário
-                Nome:
-                Senha:
-                E-mail:
-                Sexo:
-                    - Masculino
-                    - Feminino
-                Data de Nascimento:
-            
-            Endereço do Usuário
-                Logradouro:
-                Número:
-                Estado:
-                Cidade:
-            
-            Mensagem do Usuário
-                Grau de Urgência:
-                Mensagem:
-            
-            Quero um Google Glass
-                Gostaria de adquirir um Google Glass quando disponível
-                Cor:
-                Quantidade:
-                Preço Total: R$
-            
-            
-            [BOTÃO ENVIAR]
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Identificação do Usuário</legend>
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input class="itpn" type="text" name="nome" placeholder="Nome Completo" id="nome">
+                        </p>
+                        <p>
+                            <label for="senha">Senha:</label>
+                            <input class="itpn" type="password" name="senha" placeholder="Min. 8 - Max. 20 caracteres" max="20" min="8" id="senha">
+                        </p>
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input class="itpn" type="email" placeholder="exemplo@dominio.com" name="email" id="email">
+                        </p>
+                        <fieldset id="s">
+                            <p>
+                                <legend>Sexo:</legend>
+                                <label for="masc">Masculino</label>
+                                <input type="radio" name="sexo" value="M" id="masc"> <br>
+                                <label for="fem">Feminino</label>
+                                <input type="radio" name="sexo" value="F" id="fem">
+                            </p>    
+                        </fieldset>
+                        <p>
+                            <label for="nasc">Data de Nascimento:</label>
+                            <input type="date" name="nasc" id="nasc">
+                        </p>        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Endereço do Usuário</legend>
+                        <p>
+                            <label for="rua">Logradouro:</label>
+                            <input class="itpn" type="text" name="rua" placeholder="Avenida, Rua, Travessa..." id="rua">
+                        </p>
+                        <p>
+                            <label for="num">Número:</label>
+                            <input type="number" min="1" name="num" id="num">
+                        </p>
+                        <p>
+                            <label for="est">Estado:</label>
+                            <select name="est" id="est">
+                                <option selected disabled>Selecionar</option>
+                                <optgroup label="Norte">
+                                    <option value="ac">Acre</option>
+                                    <option value="ap">Amapá</option>
+                                    <option value="am">Amazonas</option>
+                                    <option value="pa">Pará</option>
+                                    <option value="ro">Rondônia</option>
+                                    <option value="rr">Roraima</option>
+                                    <option value="to">Tocantins</option>
+                                </optgroup>
+                                <optgroup label="Nordeste">
+                                    <option value="al">Alagoas</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="ma">Maranhão</option>
+                                    <option value="pa">Paraíba</option>
+                                    <option value="pe">Pernambuco</option>
+                                    <option value="pi">Piauí</option>
+                                    <option value="rn">Rio Grande do Norte</option>
+                                    <option value="se">Sergipe</option>
+                                </optgroup>
+                                <optgroup label="Sudeste">
+                                    <option value="es">Espírito Santo</option>
+                                    <option value="mg">Minas Gerais</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="sp">São Paulo</option>
+                                </optgroup>
+                                <optgroup label="Sul">
+                                    <option value="pr">Paraná</option>
+                                    <option value="rs">Rio Grande do Sul</option>
+                                    <option value="sc">Santa Catarina</option>
+                                </optgroup>
+                                <optgroup label="Centro-Oeste">
+                                    <option value="go">Goiás</option>
+                                    <option value="mg">Mato Grosso</option>
+                                    <option value="ms">Mato Grosso do Sul</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="cid">Cidade:</label>
+                            <input class="itpn" type="text" name="cid" placeholder="Sua cidade" id="cid">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mensagem do Usuário</legend>
+                        <p>
+                            <label for="grau">Grau de Urgência:</label>
+                            Min <input type="range" min="1" max="5" name="grau" id="grau"> Max
+                        </p>
+                        <p>
+                            <label for="msg">Mensagem:</label> <br>
+                            <textarea name="msg" id="msg" placeholder="&nbsp;Digite sua mensagem aqui..." cols="30" rows="10"></textarea>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Quero um Google Glass</legend>
+                        <p>
+                            <input type="checkbox" name="adq" checked id="adq">
+                            <label for="adq">
+                                Gostaria de adquirir um Google Glass quando disponível
+                            </label>
+                        </p>
+                        <p>
+                            <label for="cor">Cor:</label>
+                            <input type="color" name="cor" id="cor">
+                        </p>
+                        <p>
+                            <label for="quant">Quantidade:</label>
+                            <input type="number" min="1" max="100" name="quant" id="quant">
+                        </p>
+                        <p>
+                            <label for="preco">Preço Total: R$: </label>
+                            <input size="8" type="text" name="preco" disabled   id="preco">
+                        </p>        
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                </form>
             </article>
         </section>
     </main>
 
     <footer>
-        Copyright 2013 - by Gustavo Guanabara
-        Facebook | Twitter
+        <p>
+            Copyright 2013 - by Gustavo Guanabara
+            Facebook | Twitter
+        </p>
     </footer>
     <script src="javascript/funcoes.js"></script>
 </body>

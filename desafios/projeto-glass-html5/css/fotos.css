@@ -3,60 +3,96 @@
 #lis-img {
     list-style-type: none;
     display: block;
-    padding: 10px;
-    margin: auto;
-    width: 90vw;
+    padding: 40px;
     overflow: hidden;
 }
 
 ul#lis-img > li {
     float: left;
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    transition: all 0.5s ease-in;
+}
+
+ul#lis-img > li:hover {
+    margin: 10px;
+    transition: all 0.5s ease-in;
+    transform: scale(1.5);
 }
 
 ul#lis-img > li > span {
     opacity: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 1px black;
+    line-height: 370px;
 }
 
-ul#lis-img > li:hover {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    transition: 0.3s;
+ul#lis-img > li:hover span {
+    opacity: 1;
+
 }
-
-
 
 #foto-01 {
-    background: white url(../imagens/galeria-01.jpg) center center no-repeat;
-    background-size: 220px 220px;
+    background: white url(../imagens/galeria-01.jpg) 50% 50% no-repeat;
+    background-size: 400px 400px;
+}
+
+#foto-01:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
 }
 
 #foto-02 {
     background: white url(../imagens/galeria-02.jpg) center center no-repeat;
-    background-size: 220px 220px;
+    background-size: 400px 400px;
+}
+
+#foto-02:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
 }
 
 #foto-03 {
     background: white url(../imagens/galeria-03.jpg) center center no-repeat;
-    background-size: 220px 220px;
+    background-size: 400px 400px;
+}
+
+#foto-03:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
 }
 
 #foto-04 {
     background: white url(../imagens/galeria-04.jpg) center center no-repeat;
-    background-size: 220px 220px;
+    background-size: 400px 400px;
+}
+
+#foto-04:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
 }
 
 #foto-05 {
     background: white url(../imagens/galeria-05.jpg) center center no-repeat;
-    background-size: 220px 220px;
+    background-size: 400px 400px;
+}
+
+#foto-05:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
 }
 
 #foto-06 {
     background: white url(../imagens/galeria-06.jpg) center center;
-    background-size: 200px 200px;
+    background-size: 400px 400px;
 }
 
+#foto-06:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}

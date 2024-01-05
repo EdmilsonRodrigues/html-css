@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Google Glass</title>
 
 </head>
-<body onresize="padraoMenu()" onload="padraoMenu()">
+<body onresize="padraoMenu()" onload="padraoMenu(), mudaFoto(4)">
     <div id="interface">
         <header id="cabecalho">
             <hgroup>
@@ -18,7 +19,7 @@
             </hgroup>
 
             <picture>
-                <source media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
+                <source id="iconep" media="(max-width: 767px)" srcset="imagens/glass-oculos-preto-pp.png" type="image/png">
                 <img id="icone" src="imagens/glass-oculos-preto-peq.png" alt="Logo Google Glass">
             </picture>
 
@@ -28,32 +29,47 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li><a onmouseover="mudaFoto(1)" onmouseout="mudaFoto(0)" href="index.html" target="_self">Home</a></li>
-                    <li><a onmouseover="mudaFoto(2)" onmouseout="mudaFoto(0)" href="specs.html" target="_self" rel="next">Especificações</a></li>
-                    <li><a onmouseover="mudaFoto(3)" onmouseout="mudaFoto(0)" href="fotos.html" target="_self" rel="next">Fotos</a></li>
-                    <li><a onmouseover="mudaFoto(4)" onmouseout="mudaFoto(0)" href="multimidia.html" target="_self" rel="next">Multimídia</a></li>
-                    <li><a onmouseover="mudaFoto(5)" onmouseout="mudaFoto(0)" href="fale-conosco.html" target="_self" rel="next">Fale conosco</a></li>
+                    <li><a onmouseover="mudaFoto(1)" onmouseout="mudaFoto(4)" href="index.html" target="_self">Home</a></li>
+                    <li><a onmouseover="mudaFoto(2)" onmouseout="mudaFoto(4)" href="specs.html" target="_self" rel="next">Especificações</a></li>
+                    <li><a onmouseover="mudaFoto(3)" onmouseout="mudaFoto(4)" href="fotos.html" target="_self" rel="next">Fotos</a></li>
+                    <li><a href="multimidia.html" target="_self" rel="next">Multimídia</a></li>
+                    <li><a onmouseover="mudaFoto(5)" onmouseout="mudaFoto(4)" href="fale-conosco.html" target="_self" rel="next">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
         
     <main>
         <section>
-            Glass > Multimídia
-            Sons e Vídeos
-            por Gustavo Guanabara
-            Atualizado em 01/Maio/2013
+            <header id="cabecalhoartigo">
+                <nav id="caminho">
+                    <ul>
+                        <li><a href="#">Glass</a></li>
+                        <li><a href="#">Multimídia</a></li>
+                    </ul>
+                </nav>
+                <hgroup>
+                    <h1>Sons e vídeos</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3>Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
             <article>
-                Áudio e Vídeo
-                [AQUI ENTRA UM VÍDEO]
-                [AQUI ENTRA UM ÁUDIO]
+                <h1>Áudio e Vídeo</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8?si=IJ1FYE_68vERr4p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eo29M8Yk3Qc?si=mHeKQlJV60ZKiPJ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5R1snVxGNVs?si=ktKSfW93XC2Qtfec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <audio>
+                    <source src="media/2009-lovers-carvings-bibio.mp3" type="audio/">
+                </audio>
             </article>
         </section>
     </main>
 
     <footer>
-        Copyright 2013 - by Gustavo Guanabara
-        Facebook | Twitter
+        <p>
+            Copyright 2013 - by Gustavo Guanabara
+            Facebook | Twitter
+        </p>
     </footer>
     <script src="javascript/funcoes.js"></script>
 </body>

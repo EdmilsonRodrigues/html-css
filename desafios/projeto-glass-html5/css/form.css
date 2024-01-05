@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+form p {
+    margin: 10px 10px;
+    background-color: ;
+    border-radius: 20px;
+}
+
+form fieldset > legend {
+    text-align: center;
+    transform: translate(0%, 50%);
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+form fieldset {
+    border-radius: 20px;
+    background-color: #8c57a5aa;
+    border: none;
+}
+
+form label {
+    font-size: 1.1em;
+}
+
+form input {
+    font-size: 1em;
+    padding: 2px;
+}
+
+form .itpn {
+    width: 90%;
+    padding: 12px 20px;
+    font-size: 1em;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form #s {
+    background-color: #ffffff00;
+    margin-bottom: -10px;
+}
+
+form #s legend {
+    margin-top: -20px;
+    text-align: left;
+    padding: 4px;
+    font-size: 1.1em;
+}
+
+form #s input {
+    float: left;
+    margin: 7px 0px 7px 20px;
+}
+
+form #s input#fem {
+    margin-left: -13px;
+    margin-bottom: 0px;
+}
+
+form #s label {
+    padding-left: 10px;
+}
+
+form select {
+    font-size: 1em;
+    padding: 2px;
+}
+
+form input[type="range"] {
+    transform: translate(0%, 25%);
+}
+
+form textarea {
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+form input#quant {
+    width: 50px;
+}
+
+form input#num {
+    width: 80px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: #8c57a5aa;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--cor06);
+    transition: 0.3s ease;
+
+}

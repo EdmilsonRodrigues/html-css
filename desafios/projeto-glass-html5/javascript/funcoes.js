@@ -45,6 +45,6 @@ function mudaFoto(tipo) {
         icon.src = arquivo
     } else {
         let icon = window.document.querySelector('source#iconep')
-        icon.srcset = arquivo        
+        icon.srcset = arquivo 
     }
 }

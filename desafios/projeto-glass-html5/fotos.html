@@ -10,7 +10,7 @@
     <title>Google Glass</title>
 
 </head>
-<body onresize="padraoMenu()" onload="padraoMenu()">
+<body onresize="padraoMenu(), mudaFoto(3)" onload="padraoMenu(), mudaFoto(3)">
     <div id="interface">
         <header id="cabecalho">
             <hgroup>
@@ -29,11 +29,11 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li><a onmouseover="mudaFoto(1)" onmouseout="mudaFoto(0)" href="index.html" target="_self">Home</a></li>
-                    <li><a onmouseover="mudaFoto(2)" onmouseout="mudaFoto(0)" href="specs.html" target="_self" rel="next">Especificações</a></li>
-                    <li><a onmouseover="mudaFoto(3)" onmouseout="mudaFoto(0)" href="fotos.html" target="_self" rel="next">Fotos</a></li>
-                    <li><a onmouseover="mudaFoto(4)" onmouseout="mudaFoto(0)" href="multimidia.html" target="_self" rel="next">Multimídia</a></li>
-                    <li><a onmouseover="mudaFoto(5)" onmouseout="mudaFoto(0)" href="fale-conosco.html" target="_self" rel="next">Fale conosco</a></li>
+                    <li><a onmouseover="mudaFoto(1)" onmouseout="mudaFoto(3)" href="index.html" target="_self">Home</a></li>
+                    <li><a onmouseover="mudaFoto(2)" onmouseout="mudaFoto(3)" href="specs.html" target="_self" rel="next">Especificações</a></li>
+                    <li><a href="fotos.html" target="_self" rel="next">Fotos</a></li>
+                    <li><a onmouseover="mudaFoto(4)" onmouseout="mudaFoto(3)" href="multimidia.html" target="_self" rel="next">Multimídia</a></li>
+                    <li><a onmouseover="mudaFoto(5)" onmouseout="mudaFoto(3)" href="fale-conosco.html" target="_self" rel="next">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
@@ -61,7 +61,7 @@
                     <ul id="lis-img">
                         <li id="foto-01"><span>Agenda e lembretes</span></li>
                         <li id="foto-02"><span>Sergey Brin usando o Glass</span></li>
-                        <li id="foto-03"><span>Leve e <br> compacto</span></li>
+                        <li id="foto-03"><span>Leve e compacto</span></li>
                         <li id="foto-04"><span>Sensação de uma tela de 50"</span></li>
                         <li id="foto-05"><span>Vários tipos de lente</span></li>
                         <li id="foto-06"><span>Informações importantes</span></li>
@@ -71,8 +71,10 @@
         </main>
     
         <footer>
-            Copyright 2013 - by Gustavo Guanabara
-            Facebook | Twitter
+            <p>
+                Copyright 2013 - by Gustavo Guanabara
+                Facebook | Twitter
+            </p>
         </footer>    
     </div>
     <script src="javascript/funcoes.js"></script>
